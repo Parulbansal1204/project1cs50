@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Register!</title>
+</head>
+<body>
+  <div class="register">
+    <h1>Register</h1>
+    <a href="{{url_for('login')}}">Login</a>
+      <a href="{{url_for('register')}}">Register</a>
+      <form action="{{url_for('register')}}" method="post">
+        <input type="text" name="username" placeholder="Username" required/>
+        <input type="password" name="password" placeholder="Password" required/>
+        <input type="email" name="email" placeholder="Email" required/>
+        <input type="submit" value="Okay"/>
+      </form>
+    </div>
+</body>
+</html>
